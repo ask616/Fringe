@@ -1,0 +1,47 @@
+body{
+	margin: 0;
+	min-width: 100%;
+	min-height: 100%;
+}
+
+
+
+.login-table{
+	width: 100%;
+	height: 100vh;
+	border-collapse: collapse;
+	background-image: url("../img/bg.jpg");/*
+	background-position: 0 -20vh;*/
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
+}
+
+.login-table tr{
+	width: 100%;
+	height: 100%;
+}
+
+.login-table tr td{
+	width: 100%;
+	height: 100%;
+	vertical-align: center;
+	text-align: center;
+}
+
+#fb-login{
+    border: none;
+    padding: 0.7em 1.2em 0.6em 1.2em ;
+    background: #3b5998;
+    color: #fff;
+    font-family: "Open Sans";
+    font-weight: 300;
+    font-size: 16px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+    cursor: pointer;
+    display: inline-block;
+    border-radius: 2px;
+    margin-top: 20px;
+    outline: none;
+}

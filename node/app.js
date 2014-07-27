@@ -5,8 +5,8 @@ var express = require('express')
   , mongoose = require('mongoose')
   , FacebookStrategy = require('passport-facebook').Strategy;
 
-var FACEBOOK_APP_ID = "put here areeb";
-var FACEBOOK_APP_SECRET = "put here areeb";
+var FACEBOOK_APP_ID = "301250500045786";
+var FACEBOOK_APP_SECRET = "0734e15b504af938b248f0d981a1a9bc";
 
 
 // Passport session setup.
@@ -85,6 +85,7 @@ app.get('/', function(req, res){
   // }
 
   // Areeb just render root here which is index so just res.render('/');
+  res.render('index.ejs',{});
 });
 
 app.get('/account', ensureAuthenticated, function(req, res){
