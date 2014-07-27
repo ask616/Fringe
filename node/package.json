@@ -5,6 +5,9 @@
     "express": "3.x",
     "ejs": ">= 0.0.0",
     "passport": ">= 0.0.0",
-    "passport-facebook": ">= 0.0.0"
+    "passport-facebook": ">= 0.0.0",
+    "mongoose":">=0.0.0",
+    "request":">=0.0.0",
+    "stylus":">=0.0.0"
   }
 }
