@@ -111,9 +111,12 @@
             </li>
         </ul>
     </div>
-     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
+
+    <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
+            //feature for "huddle" or emergency meetup with photo upload and directions
+
             var groupvar =[];
 
             var id;
@@ -149,6 +152,131 @@
                 });
               }
             });
+
+            $('input[name="zm-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+              if(state){
+                myRef.child("users").child("Zuhayeer Musa").child("data").on("value",function(snapshot){
+                    var obj = snapshot.val();
+                    id=obj.id;
+                    myRef.child(id).once("value",function(snap2){
+                        if(snap2.hasChild("group")){
+                            myRef.child(id).once("value",function(snap3){
+                                groupvar = snap3.val().group
+                            });
+                        }
+                    });
+                    groupvar.push("Zuhayeer Musa");
+                    myRef.child(id).update({
+                        group:groupvar
+                    });
+                });
+              } else {
+                myRef.child(id).once("value",function(snap4){
+                    groupvar = snap4.val().group;
+                });
+                var index = groupvar.indexOf("Zuhayeer Musa");
+                if (index > -1) {
+                    groupvar.splice(index, 1);
+                }
+                myRef.child(id).update({
+                    group:groupvar
+                });
+              }
+            });
+
+            $('input[name="ds-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+              if(state){
+                myRef.child("users").child("Danish Shaik").child("data").on("value",function(snapshot){
+                    var obj = snapshot.val();
+                    id=obj.id;
+                    myRef.child(id).once("value",function(snap2){
+                        if(snap2.hasChild("group")){
+                            myRef.child(id).once("value",function(snap3){
+                                groupvar = snap3.val().group
+                            });
+                        }
+                    });
+                    groupvar.push("Danish Shaik");
+                    myRef.child(id).update({
+                        group:groupvar
+                    });
+                });
+              } else {
+                myRef.child(id).once("value",function(snap4){
+                    groupvar = snap4.val().group;
+                });
+                var index = groupvar.indexOf("Danish Shaik");
+                if (index > -1) {
+                    groupvar.splice(index, 1);
+                }
+                myRef.child(id).update({
+                    group:groupvar
+                });
+              }
+            });
+
+            $('input[name="oa-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+              if(state){
+                myRef.child("users").child("Omar Alhait").child("data").on("value",function(snapshot){
+                    var obj = snapshot.val();
+                    id=obj.id;
+                    myRef.child(id).once("value",function(snap2){
+                        if(snap2.hasChild("group")){
+                            myRef.child(id).once("value",function(snap3){
+                                groupvar = snap3.val().group
+                            });
+                        }
+                    });
+                    groupvar.push("Omar Alhait");
+                    myRef.child(id).update({
+                        group:groupvar
+                    });
+                });
+              } else {
+                myRef.child(id).once("value",function(snap4){
+                    groupvar = snap4.val().group;
+                });
+                var index = groupvar.indexOf("Omar Alhait");
+                if (index > -1) {
+                    groupvar.splice(index, 1);
+                }
+                myRef.child(id).update({
+                    group:groupvar
+                });
+              }
+            });
+
+            $('input[name="as-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+              if(state){
+                myRef.child("users").child("Amundeep Singh").child("data").on("value",function(snapshot){
+                    var obj = snapshot.val();
+                    id=obj.id;
+                    myRef.child(id).once("value",function(snap2){
+                        if(snap2.hasChild("group")){
+                            myRef.child(id).once("value",function(snap3){
+                                groupvar = snap3.val().group
+                            });
+                        }
+                    });
+                    groupvar.push("Amundeep Singh");
+                    myRef.child(id).update({
+                        group:groupvar
+                    });
+                });
+              } else {
+                myRef.child(id).once("value",function(snap4){
+                    groupvar = snap4.val().group;
+                });
+                var index = groupvar.indexOf("Amundeep Singh");
+                if (index > -1) {
+                    groupvar.splice(index, 1);
+                }
+                myRef.child(id).update({
+                    group:groupvar
+                });
+              }
+            });
+
         });
     </script>
 
