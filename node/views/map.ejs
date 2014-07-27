@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	
+ 	<head>
+    	<title>Blue.</title>
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    	<!-- add this to content to disable zooming: maximum-scale=1, user-scalable=no-->
+    	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
+        <link href='css/styles.css' rel='stylesheet' type="text/css">
+        
+        <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
+        <link rel="stylesheet" type="text/css" href="css/Flat-UI-master/css/flat-ui.css">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="js/bootstrap-switch.min.js"></script>
+        
+
+        <style type="text/css">
+            html { height: 100% }
+            body { height: 100%; margin: 0; padding: 0 }
+            #map-canvas {
+                height: 35%;position:relative;}
+        </style>
+
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
+        </script>
+
+        <script type="text/javascript">
+            function initialize() {
+
+                var myLatLng = new google.maps.LatLng(37.797305, -122.404634);
+
+                var mapOptions = {
+                    center: myLatLng,
+                    zoom: 19
+                };
+                var map = new google.maps.Map(document.getElementById("map-canvas"),
+                    mapOptions);
+
+                var marker = new google.maps.Marker({
+                      position: myLatLng,
+                      map: map,
+                      title: 'Hello World!',
+                      icon: 'img/point.png'
+                });
+
+                var infowindow = new google.maps.InfoWindow();
+
+                google.maps.event.addListener(marker, 'click', (function(marker) {
+                    return function() {
+                        infowindow.setContent("Areeb's beard");
+                        infowindow.open(map, marker);
+                    }
+                })(marker));
+
+            }
+
+            google.maps.event.addDomListener(window, 'load', initialize);
+
+        </script>
+
+
+        
+ 	</head>
+
+<body>	
+	
+    <div class="action-bar"></div>
+
+    <div id="map-canvas"></div>
+
+    <div id="listview">
+        <ul>
+            <li id="one">
+                <table id="friend-table">
+                    <tr>
+                        <td>Areeb Khan</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                    </tr>
+                </table>
+            </li>
+            <li id="two">
+                <table id="friend-table">
+                    <tr>
+                        <td>Zuhayeer Musa</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                    </tr>
+                </table>
+            </li>
+            <li id="one">
+                <table id="friend-table">
+                    <tr> 
+                        <td>Danish Shaik</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                    </tr>
+                </table>
+            </li>
+            <li id="two">
+                <table id="friend-table">
+                    <tr>
+                        <td>Omar Alhait</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                    </tr>
+                </table>
+            </li>
+        </ul>
+    </div>
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("[name='my-checkbox']").bootstrapSwitch();
+        });
+    </script>
+
+</body>
+
+
+
+
+</html>

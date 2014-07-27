@@ -60,3 +60,54 @@ body{
     margin-top: 20px;
     outline: none;
 }
+
+.action-bar{
+	width: 100%;
+	height: 10%;
+	background-color: #3498DB;
+	position: relative;
+	z-index: 1000;
+	top: 0;
+}
+
+#listview{
+	width: 100%;
+	height: 55%;
+	position: relative;
+	overflow:scroll;
+}
+
+#listview ul{
+	width: 100%;
+	list-style:none;
+    padding-left:0;
+}
+
+#listview ul li{
+	left: 0;
+	position: relative;
+	height: 25vh;
+	padding-left: 20px;
+}
+
+#friend-table{
+	vertical-align: middle;
+	height: 100%;
+	width: 100%;
+	border-collapse: collapse;
+}
+
+#checkbox{
+	text-align: right;
+	padding-right: 20px;
+}
+
+#one{
+	background-color: #34495E;
+	color: #2ECC71
+}
+
+#two{
+	background-color: #2C3E50;
+	color: #2ECC71
+}
