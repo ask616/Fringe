@@ -102,13 +102,7 @@
                     </tr>
                 </table>
             </li>
-            <li id="one">
-                <table id="friend-table">
-                    <tr>
-                        <td>Amundeep Singh</td><td id="checkbox"><input type="checkbox" name="as-checkbox" data-toggle="switch"/></td>
-                    </tr>
-                </table>
-            </li>
+
         </ul>
     </div>
 
@@ -135,7 +129,7 @@
                         }
                     });
                     groupvar.push("Areeb Khan");
-                    myRef.child(id).update({
+                    myRef.child("10203370578379685").update({
                         group:groupvar
                     });
                 });
@@ -166,7 +160,7 @@
                         }
                     });
                     groupvar.push("Zuhayeer Musa");
-                    myRef.child(id).update({
+                    myRef.child("10203370578379685").update({
                         group:groupvar
                     });
                 });
@@ -197,7 +191,7 @@
                         }
                     });
                     groupvar.push("Danish Shaik");
-                    myRef.child(id).update({
+                    myRef.child("10203370578379685").update({
                         group:groupvar
                     });
                 });
@@ -228,7 +222,7 @@
                         }
                     });
                     groupvar.push("Omar Alhait");
-                    myRef.child(id).update({
+                    myRef.child("10203370578379685").update({
                         group:groupvar
                     });
                 });
@@ -237,37 +231,6 @@
                     groupvar = snap4.val().group;
                 });
                 var index = groupvar.indexOf("Omar Alhait");
-                if (index > -1) {
-                    groupvar.splice(index, 1);
-                }
-                myRef.child(id).update({
-                    group:groupvar
-                });
-              }
-            });
-
-            $('input[name="as-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
-              if(state){
-                myRef.child("users").child("Amundeep Singh").child("data").on("value",function(snapshot){
-                    var obj = snapshot.val();
-                    id=obj.id;
-                    myRef.child(id).once("value",function(snap2){
-                        if(snap2.hasChild("group")){
-                            myRef.child(id).once("value",function(snap3){
-                                groupvar = snap3.val().group
-                            });
-                        }
-                    });
-                    groupvar.push("Amundeep Singh");
-                    myRef.child(id).update({
-                        group:groupvar
-                    });
-                });
-              } else {
-                myRef.child(id).once("value",function(snap4){
-                    groupvar = snap4.val().group;
-                });
-                var index = groupvar.indexOf("Amundeep Singh");
                 if (index > -1) {
                     groupvar.splice(index, 1);
                 }
