@@ -51,7 +51,7 @@
 
                 google.maps.event.addListener(marker, 'click', (function(marker) {
                     return function() {
-                        infowindow.setContent("Areeb's beard");
+                        infowindow.setContent("Me!");
                         infowindow.open(map, marker);
                     }
                 })(marker));
@@ -77,37 +77,78 @@
             <li id="one">
                 <table id="friend-table">
                     <tr>
-                        <td>Areeb Khan</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                        <td>Areeb Khan</td><td id="checkbox"><input type="checkbox" name="ak-checkbox" data-toggle="switch"/></td>
                     </tr>
                 </table>
             </li>
             <li id="two">
                 <table id="friend-table">
                     <tr>
-                        <td>Zuhayeer Musa</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                        <td>Zuhayeer Musa</td><td id="checkbox"><input type="checkbox" name="zm-checkbox" data-toggle="switch"/></td>
                     </tr>
                 </table>
             </li>
             <li id="one">
                 <table id="friend-table">
                     <tr> 
-                        <td>Danish Shaik</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                        <td>Danish Shaik</td><td id="checkbox"><input type="checkbox" name="ds-checkbox" data-toggle="switch"/></td>
                     </tr>
                 </table>
             </li>
             <li id="two">
                 <table id="friend-table">
                     <tr>
-                        <td>Omar Alhait</td><td id="checkbox"><input type="checkbox" name="my-checkbox" data-toggle="switch"/></td>
+                        <td>Omar Alhait</td><td id="checkbox"><input type="checkbox" name="oa-checkbox" data-toggle="switch"/></td>
+                    </tr>
+                </table>
+            </li>
+            <li id="one">
+                <table id="friend-table">
+                    <tr>
+                        <td>Amundeep Singh</td><td id="checkbox"><input type="checkbox" name="as-checkbox" data-toggle="switch"/></td>
                     </tr>
                 </table>
             </li>
         </ul>
     </div>
-
+     <script src="https://cdn.firebase.com/js/client/1.0.18/firebase.js"></script>
     <script type="text/javascript">
         $(document).ready(function(){
-            $("[name='my-checkbox']").bootstrapSwitch();
+            var groupvar =[];
+
+            var id;
+            var myRef = new Firebase("https://blue-outsidehacks.firebaseio.com/");
+            $("[type='checkbox']").bootstrapSwitch();
+            $('input[name="ak-checkbox"]').on('switchChange.bootstrapSwitch', function(event, state) {
+              if(state){
+                myRef.child("users").child("Areeb Khan").child("data").on("value",function(snapshot){
+                    var obj = snapshot.val();
+                    id=obj.id;
+                    myRef.child(id).once("value",function(snap2){
+                        if(snap2.hasChild("group")){
+                            myRef.child(id).once("value",function(snap3){
+                                groupvar = snap3.val().group
+                            });
+                        }
+                    });
+                    groupvar.push("Areeb Khan");
+                    myRef.child(id).update({
+                        group:groupvar
+                    });
+                });
+              } else {
+                myRef.child(id).once("value",function(snap4){
+                    groupvar = snap4.val().group;
+                });
+                var index = groupvar.indexOf("Areeb Khan");
+                if (index > -1) {
+                    groupvar.splice(index, 1);
+                }
+                myRef.child(id).update({
+                    group:groupvar
+                });
+              }
+            });
         });
     </script>
 
