@@ -1,0 +1,12 @@
+<% if (!user) { %>
+	<h2>Welcome! Please log in.</h2>
+<% } else { %>
+	<p><%= JSON.stringify(user) %></p>
+	<h2>Hello, <%= user.username %>.</h2>
+	<p><%= friends.data.length %></p>
+	<p><%= friends.paging.next %></p>
+	<% for(var i = 0; i < friends.data.length; i++) { %>
+		<li><%= friends.data[i].name %></li>
+		<li><%= friends.data[i].id %></li>
+	<% } %>
+<% } %>
