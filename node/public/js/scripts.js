@@ -21,17 +21,17 @@ $(document).ready(function(){
 		authRef.on("value", function(snap) {
 		  if (snap.val() === true) {
 		    console.log("authenticated");
-		    window.location.replace("http://localhost:3000/map");
+		    window.location.replace("http://getblue.herokuapp.com/map");
 		  } else {
 		    console.log("not authenticated");
 		  }
 		});
 
-	$('#fb-login').click(function(){
-	auth.login('facebook', {
-	  rememberMe: true,
-	  scope: 'user_friends'
-	});
+	// $('#fb-login').click(function(){
+	// auth.login('facebook', {
+	//   rememberMe: true,
+	//   scope: 'user_friends'
+	// });
 });
 
 })

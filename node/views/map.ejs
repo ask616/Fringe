@@ -8,6 +8,7 @@
     	<!-- add this to content to disable zooming: maximum-scale=1, user-scalable=no-->
     	<link href='http://fonts.googleapis.com/css?family=Roboto:100,300' rel='stylesheet' type='text/css'>
         <link href='css/styles.css' rel='stylesheet' type="text/css">
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
         
         <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
         <link rel="stylesheet" type="text/css" href="css/bootstrap-switch.min.css">
@@ -22,7 +23,21 @@
             html { height: 100% }
             body { height: 100%; margin: 0; padding: 0 }
             #map-canvas {
-                height: 35%;position:relative;}
+                height: 40%; width:100vh; position:relative;}
+
+                .action-bar{
+        width: 100%;
+        height: 10%;
+        background-color: #3498DB;
+        position: relative;
+        z-index: 1000;
+        font-family: "Open Sans";
+        font-weight: 300;
+        top: 0;
+        color: white;
+        font-size: 24px;
+        vertical-align: middle;
+}
         </style>
 
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?sensor=false">
@@ -60,7 +75,7 @@
                 var myRef = new Firebase("https://blue-outsidehacks.firebaseio.com/");
 
                 myRef.child("10203370578379685").child("group").on("value",function(){
-                    var myLatLng = new google.maps.LatLng(36.797305, -121.404634);
+                    var myLatLng = new google.maps.LatLng(37.797306, -122.404692);
                     latlngs.push(myLatLng);
 
                     var marker = new google.maps.Marker({
@@ -74,7 +89,7 @@
 
                     google.maps.event.addListener(marker, 'click', (function(marker) {
                         return function() {
-                            infowindow.setContent("test");
+                            infowindow.setContent("Omar Alhait");
                             infowindow.open(map, marker);
                         }
                     })(marker));
@@ -99,7 +114,14 @@
 
 <body>	
 	
-    <div class="action-bar"></div>
+    <!-- <div class="action-bar"></div> -->
+    <div class="action-bar">
+        <table style="width:100%;height:100%;border-collapse:collapse">
+            <tr  style="width:100%;height:100%">
+                <td style="width:100%;height:100%;padding-left:15px;">Your Friends</td>
+            </tr>
+        </table>
+    </div>
 
     <div id="map-canvas"></div>
 
@@ -129,7 +151,7 @@
             <li id="two">
                 <table id="friend-table">
                     <tr>
-                        <td>Omar Alhait</td><td id="checkbox"><input type="checkbox" name="oa-checkbox" data-toggle="switch"/></td>
+                        <td>Omar Alhait</td><td id="checkbox"><input type="checkbox" checked name="oa-checkbox" data-toggle="switch"/></td>
                     </tr>
                 </table>
             </li>
