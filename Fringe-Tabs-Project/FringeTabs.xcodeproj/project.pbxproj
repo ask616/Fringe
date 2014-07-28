@@ -1,0 +1,482 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8AD9ADFD1986E5C200250BE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9ADFC1986E5C200250BE4 /* Foundation.framework */; };
+		8AD9ADFF1986E5C200250BE4 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9ADFE1986E5C200250BE4 /* CoreGraphics.framework */; };
+		8AD9AE011986E5C200250BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE001986E5C200250BE4 /* UIKit.framework */; };
+		8AD9AE071986E5C200250BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE051986E5C200250BE4 /* InfoPlist.strings */; };
+		8AD9AE091986E5C200250BE4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE081986E5C200250BE4 /* main.m */; };
+		8AD9AE0D1986E5C200250BE4 /* ASAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE0C1986E5C200250BE4 /* ASAppDelegate.m */; };
+		8AD9AE101986E5C200250BE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE0E1986E5C200250BE4 /* Main.storyboard */; };
+		8AD9AE131986E5C200250BE4 /* ASFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE121986E5C200250BE4 /* ASFirstViewController.m */; };
+		8AD9AE161986E5C200250BE4 /* ASSecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE151986E5C200250BE4 /* ASSecondViewController.m */; };
+		8AD9AE181986E5C200250BE4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE171986E5C200250BE4 /* Images.xcassets */; };
+		8AD9AE1F1986E5C200250BE4 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE1E1986E5C200250BE4 /* XCTest.framework */; };
+		8AD9AE201986E5C200250BE4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9ADFC1986E5C200250BE4 /* Foundation.framework */; };
+		8AD9AE211986E5C200250BE4 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE001986E5C200250BE4 /* UIKit.framework */; };
+		8AD9AE291986E5C200250BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE271986E5C200250BE4 /* InfoPlist.strings */; };
+		8AD9AE2B1986E5C200250BE4 /* FringeTabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE2A1986E5C200250BE4 /* FringeTabsTests.m */; };
+		8AD9AE391986EC3700250BE4 /* FringeTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE381986EC3700250BE4 /* FringeTabBar.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		8AD9AE221986E5C200250BE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 8AD9ADF11986E5C200250BE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8AD9ADF81986E5C200250BE4;
+			remoteInfo = FringeTabs;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8AD9ADF91986E5C200250BE4 /* FringeTabs.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FringeTabs.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD9ADFC1986E5C200250BE4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		8AD9ADFE1986E5C200250BE4 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		8AD9AE001986E5C200250BE4 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		8AD9AE041986E5C200250BE4 /* FringeTabs-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FringeTabs-Info.plist"; sourceTree = "<group>"; };
+		8AD9AE061986E5C200250BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8AD9AE081986E5C200250BE4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8AD9AE0A1986E5C200250BE4 /* FringeTabs-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FringeTabs-Prefix.pch"; sourceTree = "<group>"; };
+		8AD9AE0B1986E5C200250BE4 /* ASAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASAppDelegate.h; sourceTree = "<group>"; };
+		8AD9AE0C1986E5C200250BE4 /* ASAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASAppDelegate.m; sourceTree = "<group>"; };
+		8AD9AE0F1986E5C200250BE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8AD9AE111986E5C200250BE4 /* ASFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASFirstViewController.h; sourceTree = "<group>"; };
+		8AD9AE121986E5C200250BE4 /* ASFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASFirstViewController.m; sourceTree = "<group>"; };
+		8AD9AE141986E5C200250BE4 /* ASSecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ASSecondViewController.h; sourceTree = "<group>"; };
+		8AD9AE151986E5C200250BE4 /* ASSecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ASSecondViewController.m; sourceTree = "<group>"; };
+		8AD9AE171986E5C200250BE4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8AD9AE1D1986E5C200250BE4 /* FringeTabsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FringeTabsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8AD9AE1E1986E5C200250BE4 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		8AD9AE261986E5C200250BE4 /* FringeTabsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FringeTabsTests-Info.plist"; sourceTree = "<group>"; };
+		8AD9AE281986E5C200250BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		8AD9AE2A1986E5C200250BE4 /* FringeTabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FringeTabsTests.m; sourceTree = "<group>"; };
+		8AD9AE381986EC3700250BE4 /* FringeTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FringeTabBar.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8AD9ADF61986E5C200250BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9ADFF1986E5C200250BE4 /* CoreGraphics.framework in Frameworks */,
+				8AD9AE011986E5C200250BE4 /* UIKit.framework in Frameworks */,
+				8AD9ADFD1986E5C200250BE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD9AE1A1986E5C200250BE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9AE1F1986E5C200250BE4 /* XCTest.framework in Frameworks */,
+				8AD9AE211986E5C200250BE4 /* UIKit.framework in Frameworks */,
+				8AD9AE201986E5C200250BE4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8AD9ADF01986E5C200250BE4 = {
+			isa = PBXGroup;
+			children = (
+				8AD9AE021986E5C200250BE4 /* FringeTabs */,
+				8AD9AE241986E5C200250BE4 /* FringeTabsTests */,
+				8AD9ADFB1986E5C200250BE4 /* Frameworks */,
+				8AD9ADFA1986E5C200250BE4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8AD9ADFA1986E5C200250BE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9ADF91986E5C200250BE4 /* FringeTabs.app */,
+				8AD9AE1D1986E5C200250BE4 /* FringeTabsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8AD9ADFB1986E5C200250BE4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9ADFC1986E5C200250BE4 /* Foundation.framework */,
+				8AD9ADFE1986E5C200250BE4 /* CoreGraphics.framework */,
+				8AD9AE001986E5C200250BE4 /* UIKit.framework */,
+				8AD9AE1E1986E5C200250BE4 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8AD9AE021986E5C200250BE4 /* FringeTabs */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9AE0B1986E5C200250BE4 /* ASAppDelegate.h */,
+				8AD9AE0C1986E5C200250BE4 /* ASAppDelegate.m */,
+				8AD9AE0E1986E5C200250BE4 /* Main.storyboard */,
+				8AD9AE111986E5C200250BE4 /* ASFirstViewController.h */,
+				8AD9AE121986E5C200250BE4 /* ASFirstViewController.m */,
+				8AD9AE141986E5C200250BE4 /* ASSecondViewController.h */,
+				8AD9AE151986E5C200250BE4 /* ASSecondViewController.m */,
+				8AD9AE381986EC3700250BE4 /* FringeTabBar.png */,
+				8AD9AE171986E5C200250BE4 /* Images.xcassets */,
+				8AD9AE031986E5C200250BE4 /* Supporting Files */,
+			);
+			path = FringeTabs;
+			sourceTree = "<group>";
+		};
+		8AD9AE031986E5C200250BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9AE041986E5C200250BE4 /* FringeTabs-Info.plist */,
+				8AD9AE051986E5C200250BE4 /* InfoPlist.strings */,
+				8AD9AE081986E5C200250BE4 /* main.m */,
+				8AD9AE0A1986E5C200250BE4 /* FringeTabs-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8AD9AE241986E5C200250BE4 /* FringeTabsTests */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9AE2A1986E5C200250BE4 /* FringeTabsTests.m */,
+				8AD9AE251986E5C200250BE4 /* Supporting Files */,
+			);
+			path = FringeTabsTests;
+			sourceTree = "<group>";
+		};
+		8AD9AE251986E5C200250BE4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				8AD9AE261986E5C200250BE4 /* FringeTabsTests-Info.plist */,
+				8AD9AE271986E5C200250BE4 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8AD9ADF81986E5C200250BE4 /* FringeTabs */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD9AE2E1986E5C200250BE4 /* Build configuration list for PBXNativeTarget "FringeTabs" */;
+			buildPhases = (
+				8AD9ADF51986E5C200250BE4 /* Sources */,
+				8AD9ADF61986E5C200250BE4 /* Frameworks */,
+				8AD9ADF71986E5C200250BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FringeTabs;
+			productName = FringeTabs;
+			productReference = 8AD9ADF91986E5C200250BE4 /* FringeTabs.app */;
+			productType = "com.apple.product-type.application";
+		};
+		8AD9AE1C1986E5C200250BE4 /* FringeTabsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8AD9AE311986E5C200250BE4 /* Build configuration list for PBXNativeTarget "FringeTabsTests" */;
+			buildPhases = (
+				8AD9AE191986E5C200250BE4 /* Sources */,
+				8AD9AE1A1986E5C200250BE4 /* Frameworks */,
+				8AD9AE1B1986E5C200250BE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8AD9AE231986E5C200250BE4 /* PBXTargetDependency */,
+			);
+			name = FringeTabsTests;
+			productName = FringeTabsTests;
+			productReference = 8AD9AE1D1986E5C200250BE4 /* FringeTabsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8AD9ADF11986E5C200250BE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = AS;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Amundeep Singh";
+				TargetAttributes = {
+					8AD9AE1C1986E5C200250BE4 = {
+						TestTargetID = 8AD9ADF81986E5C200250BE4;
+					};
+				};
+			};
+			buildConfigurationList = 8AD9ADF41986E5C200250BE4 /* Build configuration list for PBXProject "FringeTabs" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8AD9ADF01986E5C200250BE4;
+			productRefGroup = 8AD9ADFA1986E5C200250BE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8AD9ADF81986E5C200250BE4 /* FringeTabs */,
+				8AD9AE1C1986E5C200250BE4 /* FringeTabsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8AD9ADF71986E5C200250BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9AE181986E5C200250BE4 /* Images.xcassets in Resources */,
+				8AD9AE071986E5C200250BE4 /* InfoPlist.strings in Resources */,
+				8AD9AE391986EC3700250BE4 /* FringeTabBar.png in Resources */,
+				8AD9AE101986E5C200250BE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD9AE1B1986E5C200250BE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9AE291986E5C200250BE4 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8AD9ADF51986E5C200250BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9AE131986E5C200250BE4 /* ASFirstViewController.m in Sources */,
+				8AD9AE0D1986E5C200250BE4 /* ASAppDelegate.m in Sources */,
+				8AD9AE161986E5C200250BE4 /* ASSecondViewController.m in Sources */,
+				8AD9AE091986E5C200250BE4 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8AD9AE191986E5C200250BE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8AD9AE2B1986E5C200250BE4 /* FringeTabsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		8AD9AE231986E5C200250BE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8AD9ADF81986E5C200250BE4 /* FringeTabs */;
+			targetProxy = 8AD9AE221986E5C200250BE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		8AD9AE051986E5C200250BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD9AE061986E5C200250BE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		8AD9AE0E1986E5C200250BE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD9AE0F1986E5C200250BE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8AD9AE271986E5C200250BE4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8AD9AE281986E5C200250BE4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8AD9AE2C1986E5C200250BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8AD9AE2D1986E5C200250BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8AD9AE2F1986E5C200250BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
+				INFOPLIST_FILE = "FringeTabs/FringeTabs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		8AD9AE301986E5C200250BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
+				INFOPLIST_FILE = "FringeTabs/FringeTabs-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		8AD9AE321986E5C200250BE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FringeTabs.app/FringeTabs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "FringeTabsTests/FringeTabsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		8AD9AE331986E5C200250BE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/FringeTabs.app/FringeTabs";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
+				INFOPLIST_FILE = "FringeTabsTests/FringeTabsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8AD9ADF41986E5C200250BE4 /* Build configuration list for PBXProject "FringeTabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD9AE2C1986E5C200250BE4 /* Debug */,
+				8AD9AE2D1986E5C200250BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8AD9AE2E1986E5C200250BE4 /* Build configuration list for PBXNativeTarget "FringeTabs" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD9AE2F1986E5C200250BE4 /* Debug */,
+				8AD9AE301986E5C200250BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		8AD9AE311986E5C200250BE4 /* Build configuration list for PBXNativeTarget "FringeTabsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8AD9AE321986E5C200250BE4 /* Debug */,
+				8AD9AE331986E5C200250BE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8AD9ADF11986E5C200250BE4 /* Project object */;
+}
