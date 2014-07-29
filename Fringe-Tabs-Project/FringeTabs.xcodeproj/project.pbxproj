@@ -23,6 +23,12 @@
 		8AD9AE291986E5C200250BE4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE271986E5C200250BE4 /* InfoPlist.strings */; };
 		8AD9AE2B1986E5C200250BE4 /* FringeTabsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE2A1986E5C200250BE4 /* FringeTabsTests.m */; };
 		8AD9AE391986EC3700250BE4 /* FringeTabBar.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE381986EC3700250BE4 /* FringeTabBar.png */; };
+		8AD9AE551987726C00250BE4 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE541987726C00250BE4 /* MapKit.framework */; };
+		8AD9AE581987760100250BE4 /* CoreBluetooth.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE561987760100250BE4 /* CoreBluetooth.framework */; };
+		8AD9AE591987760100250BE4 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8AD9AE571987760100250BE4 /* CoreLocation.framework */; };
+		8AD9AE5E198780B900250BE4 /* location.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE5D198780B900250BE4 /* location.png */; };
+		8AD9AE6019878D4C00250BE4 /* FringeSplashLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 8AD9AE5F19878D4C00250BE4 /* FringeSplashLogo.png */; };
+		8AD9AE6319878EFE00250BE4 /* ASLoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8AD9AE6219878EFE00250BE4 /* ASLoginViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +64,13 @@
 		8AD9AE281986E5C200250BE4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		8AD9AE2A1986E5C200250BE4 /* FringeTabsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FringeTabsTests.m; sourceTree = "<group>"; };
 		8AD9AE381986EC3700250BE4 /* FringeTabBar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FringeTabBar.png; sourceTree = "<group>"; };
+		8AD9AE541987726C00250BE4 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		8AD9AE561987760100250BE4 /* CoreBluetooth.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreBluetooth.framework; path = System/Library/Frameworks/CoreBluetooth.framework; sourceTree = SDKROOT; };
+		8AD9AE571987760100250BE4 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		8AD9AE5D198780B900250BE4 /* location.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = location.png; sourceTree = "<group>"; };
+		8AD9AE5F19878D4C00250BE4 /* FringeSplashLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = FringeSplashLogo.png; sourceTree = "<group>"; };
+		8AD9AE6119878EFE00250BE4 /* ASLoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ASLoginViewController.h; sourceTree = "<group>"; };
+		8AD9AE6219878EFE00250BE4 /* ASLoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ASLoginViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +78,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AD9AE581987760100250BE4 /* CoreBluetooth.framework in Frameworks */,
+				8AD9AE591987760100250BE4 /* CoreLocation.framework in Frameworks */,
+				8AD9AE551987726C00250BE4 /* MapKit.framework in Frameworks */,
 				8AD9ADFF1986E5C200250BE4 /* CoreGraphics.framework in Frameworks */,
 				8AD9AE011986E5C200250BE4 /* UIKit.framework in Frameworks */,
 				8AD9ADFD1986E5C200250BE4 /* Foundation.framework in Frameworks */,
@@ -106,6 +122,9 @@
 		8AD9ADFB1986E5C200250BE4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				8AD9AE561987760100250BE4 /* CoreBluetooth.framework */,
+				8AD9AE571987760100250BE4 /* CoreLocation.framework */,
+				8AD9AE541987726C00250BE4 /* MapKit.framework */,
 				8AD9ADFC1986E5C200250BE4 /* Foundation.framework */,
 				8AD9ADFE1986E5C200250BE4 /* CoreGraphics.framework */,
 				8AD9AE001986E5C200250BE4 /* UIKit.framework */,
@@ -120,11 +139,15 @@
 				8AD9AE0B1986E5C200250BE4 /* ASAppDelegate.h */,
 				8AD9AE0C1986E5C200250BE4 /* ASAppDelegate.m */,
 				8AD9AE0E1986E5C200250BE4 /* Main.storyboard */,
+				8AD9AE6119878EFE00250BE4 /* ASLoginViewController.h */,
+				8AD9AE6219878EFE00250BE4 /* ASLoginViewController.m */,
 				8AD9AE111986E5C200250BE4 /* ASFirstViewController.h */,
 				8AD9AE121986E5C200250BE4 /* ASFirstViewController.m */,
 				8AD9AE141986E5C200250BE4 /* ASSecondViewController.h */,
 				8AD9AE151986E5C200250BE4 /* ASSecondViewController.m */,
+				8AD9AE5D198780B900250BE4 /* location.png */,
 				8AD9AE381986EC3700250BE4 /* FringeTabBar.png */,
+				8AD9AE5F19878D4C00250BE4 /* FringeSplashLogo.png */,
 				8AD9AE171986E5C200250BE4 /* Images.xcassets */,
 				8AD9AE031986E5C200250BE4 /* Supporting Files */,
 			);
@@ -208,6 +231,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Amundeep Singh";
 				TargetAttributes = {
+					8AD9ADF81986E5C200250BE4 = {
+						DevelopmentTeam = Y3C4A323WT;
+					};
 					8AD9AE1C1986E5C200250BE4 = {
 						TestTargetID = 8AD9ADF81986E5C200250BE4;
 					};
@@ -239,6 +265,8 @@
 			files = (
 				8AD9AE181986E5C200250BE4 /* Images.xcassets in Resources */,
 				8AD9AE071986E5C200250BE4 /* InfoPlist.strings in Resources */,
+				8AD9AE6019878D4C00250BE4 /* FringeSplashLogo.png in Resources */,
+				8AD9AE5E198780B900250BE4 /* location.png in Resources */,
 				8AD9AE391986EC3700250BE4 /* FringeTabBar.png in Resources */,
 				8AD9AE101986E5C200250BE4 /* Main.storyboard in Resources */,
 			);
@@ -262,6 +290,7 @@
 				8AD9AE131986E5C200250BE4 /* ASFirstViewController.m in Sources */,
 				8AD9AE0D1986E5C200250BE4 /* ASAppDelegate.m in Sources */,
 				8AD9AE161986E5C200250BE4 /* ASSecondViewController.m in Sources */,
+				8AD9AE6319878EFE00250BE4 /* ASLoginViewController.m in Sources */,
 				8AD9AE091986E5C200250BE4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,10 +416,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
 				INFOPLIST_FILE = "FringeTabs/FringeTabs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -400,10 +432,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FringeTabs/FringeTabs-Prefix.pch";
 				INFOPLIST_FILE = "FringeTabs/FringeTabs-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -467,6 +502,7 @@
 				8AD9AE301986E5C200250BE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		8AD9AE311986E5C200250BE4 /* Build configuration list for PBXNativeTarget "FringeTabsTests" */ = {
 			isa = XCConfigurationList;
@@ -475,6 +511,7 @@
 				8AD9AE331986E5C200250BE4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

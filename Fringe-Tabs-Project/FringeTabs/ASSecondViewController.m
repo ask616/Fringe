@@ -23,7 +23,12 @@
 	// Do any additional setup after loading the view, typically from a nib.
     friends = [NSArray arrayWithObjects:@"Omar Alhait", @"Zuhayeer Musa", @"Areeb Khan", @"Danish Shaik", nil];
     
-    [self.tabBarController.tabBar setTintColor:[UIColor whiteColor]];
+    [self.tabBarController.tabBar setTintColor:[UIColor greenColor]];
+    
+    
+    [self.tabBarItem setTitle:@"Friends"];
+    
+    
     
 }
 
@@ -48,13 +53,24 @@
     
     if (cell == nil) {
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:simpleTableIdentifier];
+        
         UISwitch *switchview = [[UISwitch alloc] initWithFrame:CGRectZero];
+        [switchview addTarget:self action:@selector(switchChanged: ) forControlEvents:UIControlEventValueChanged ];
+        
         cell.accessoryView = switchview;
         
     }
     
+    
     cell.textLabel.text = [friends objectAtIndex:indexPath.row];
     return cell;
+}
+
+-(void)switchChanged:(id)sender
+{
+    
+    NSLog(@"Switch changed");
+   
 }
 
 @end
